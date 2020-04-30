@@ -62,3 +62,51 @@ main #howitworks #wallpaper {
 main #howitworks #phone img {
   width: 100%;
 }
+main #howitworks #phone .container {
+  position: relative;
+}
+/* main #howitworks #phone .col-lg-2:nth-child(odd) {
+  position: absolute;
+  bottom: 0;
+} */
+main #howitworks #phone .container .col-lg-2.uno {
+  position: relative;
+  bottom: 0;
+}
+
+/* Regole sezione info */
+.container #info .smart {
+  width: 100%;
+  height: 450px;
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container #info .getapp {
+  height: 600px;
+  background-image: linear-gradient(#405569, #253039);
+}
+.container #info .findus {
+  height: 600px;
+  background-image: url(../img/Cities-1500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Regole sezione social */
+#social {
+  height: 450px;
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#social .textsocial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  color: black;
+  padding: 80px 140px;
+}
