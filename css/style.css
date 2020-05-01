@@ -1,4 +1,7 @@
 /* REGOLE GENERALI */
+* {
+  font-family: 'Roboto', Verdana;
+}
 ul li {
   display: inline-block;
   list-style: none;
@@ -21,11 +24,16 @@ h4 {
   font-size: 1.2em;
   margin-bottom: 0.4em;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+
+main > div {
+  margin-top: 2em;
+}
 /* REGOLE HEADER */
-/* Regole nav */
-/* header nav {
-  height: 100px;
-} */
+
 header nav .container .logo {
   line-height: 3.5em;
 }
@@ -62,12 +70,15 @@ header .teaser .manifesto {
 
 /* REGOLE MAIN */
 /* Regole sezione products */
+main #products h2 {
+  padding-top: 1em;
+}
+main #products .container .block {
+  padding: 0 1em;
+}
 main #products .container #segway {
   height: 700px;
   background-color: #fafafa;
-  /* background-image: url(../img/HelbizGOxSegway.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat; */
 }
 main #products .container #bike {
   height: 700px;
@@ -92,7 +103,7 @@ main #howitworks #phone img {
   width: 100%;
 }
 main #howitworks #phone .container {
-  margin-top: -250px;
+  margin-top: -220px;
 }
 /* main #howitworks #phone .col-lg-2:nth-child(odd) {
   position: absolute;
@@ -113,6 +124,9 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
   margin-top: 100px;
   color: white;
 }
+#info a {
+  color: white;
+}
 
 #info .smart {
   width: 100%;
@@ -130,6 +144,7 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
   transform: translate(-50%,-50%);
 }
 #info .getapp {
+  margin-top: 2em;
   height: 600px;
   background-image: linear-gradient(#405569, #253039);
   position: relative;
@@ -140,9 +155,11 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
   bottom: 0%;
 }
 #info .findus {
+  margin-top: 2em;
   height: 600px;
   background-image: url(../img/Cities-1500.jpg);
-  background-size: cover;
+  background-size: 98%;
+  background-position: right;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -179,14 +196,33 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
   margin-right: 0em;
 }
 
+
 /* Footer */
 footer {
   height: 500px;
   background-color: black;
   color: white;
+  padding-top: 40px;
+  line-height: 2.2em;
+}
+
+footer a {
+  color: white;
+}
+
+footer #topfooter ul li {
+  display: block;
+}
+footer #bottomfooter {
+  margin-top: 1em;
+}
+footer #bottomfooter .container ul li {
+  margin-right: 1em;
 }
 hr {
-  margin: 1em 0;
+  width: 90%;
+  border: 1px solid white;
+  margin: 1em auto;
 }
 footer .store {
   text-align: center;
