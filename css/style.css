@@ -3,18 +3,45 @@ ul li {
   display: inline-block;
   list-style: none;
 }
-
-
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 0.4em;
+}
+h2 {
+  font-size: 2.3em;
+  margin-bottom: 0.5em;
+}
+p {
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+}
 /* REGOLE HEADER */
 /* Regole nav */
 /* header nav {
   height: 100px;
 } */
+header nav .container .logo {
+  line-height: 3.5em;
+}
 header nav .container .link ul {
   display: inline-block;
 }
 header nav .container .link ul li {
-  font-size: 0.9em;
+  font-size: 0.8em;
+  line-height: 3.5em;
+  margin-right: 0.4em;
+}
+header nav .container .link ul li:last-child {
+  margin-right: 0em;
+}
+header nav .container .link .lang {
+  margin-left: 1em;
 }
 
 /* Regole Teaser */
@@ -36,16 +63,18 @@ header .teaser .manifesto {
 /* REGOLE MAIN */
 /* Regole sezione products */
 main #products .container #segway {
-  height: 850px;
-  background-image: url(../img/HelbizGOxSegway.jpg);
+  height: 700px;
+  background-color: #fafafa;
+  /* background-image: url(../img/HelbizGOxSegway.jpg);
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 main #products .container #bike {
-  height: 850px;
-  background-image: url(../img/HelbizBike-2.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  height: 700px;
+  background-color: #fafafa;
+}
+main #products .container img {
+  width: 80%;
 }
 main #products .container .block {
   text-align: center;
@@ -63,36 +92,67 @@ main #howitworks #phone img {
   width: 100%;
 }
 main #howitworks #phone .container {
-  position: relative;
+  margin-top: -250px;
 }
 /* main #howitworks #phone .col-lg-2:nth-child(odd) {
   position: absolute;
   bottom: 0;
 } */
-main #howitworks #phone .container .col-lg-2.uno {
+main #howitworks #phone .container .col-lg-2 {
   position: relative;
+  height: 330px;
+  }
+
+main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .container .col-lg-2 .text  {
+  position: absolute;
   bottom: 0;
 }
 
 /* Regole sezione info */
-.container #info .smart {
+#info {
+  margin-top: 100px;
+  color: white;
+}
+
+#info .smart {
   width: 100%;
   height: 450px;
   background-image: url(../img/ScooterHelbiz-2400.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
-.container #info .getapp {
+#info .smart .infotext {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+}
+#info .getapp {
   height: 600px;
   background-image: linear-gradient(#405569, #253039);
+  position: relative;
 }
-.container #info .findus {
+#info .getapp img {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+#info .findus {
   height: 600px;
   background-image: url(../img/Cities-1500.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
-
+#info .infotext {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 /* Regole sezione social */
 #social {
   height: 450px;
@@ -109,4 +169,25 @@ main #howitworks #phone .container .col-lg-2.uno {
   background-color: white;
   color: black;
   padding: 80px 140px;
+  text-align: center;
+}
+#social .textsocial ul li {
+  font-size: 2em;
+  margin-right: 1em;
+}
+#social .textsocial ul li:last-child {
+  margin-right: 0em;
+}
+
+/* Footer */
+footer {
+  height: 500px;
+  background-color: black;
+  color: white;
+}
+hr {
+  margin: 1em 0;
+}
+footer .store {
+  text-align: center;
 }
