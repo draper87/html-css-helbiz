@@ -112,6 +112,9 @@
   .col-offset-xs-11 {
     margin-left: calc((100% / 12) * 11);
   }
+  .hidden-xs {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
@@ -185,6 +188,9 @@
   .col-offset-md-11 {
     margin-left: calc((100% / 12) * 11);
   }
+  .hidden-md {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -257,5 +263,8 @@
   }
   .col-offset-lg-11 {
     margin-left: calc((100% / 12) * 11);
+  }
+  .hidden-lg {
+    display: none;
   }
 }
