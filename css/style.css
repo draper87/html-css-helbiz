@@ -136,13 +136,16 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
   position: absolute;
   width: 100%;
   bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,0%);
+
 }
 #info .findus {
   margin-top: 2em;
   height: 620px;
   background-image: url(../img/Cities-1500.jpg);
   background-size: 98%;
-  background-position: right;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -167,7 +170,7 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
   transform: translate(-50%,-50%);
   background-color: white;
   color: black;
-  padding: 80px 140px;
+  padding: 80px 15%;
 }
 #social .textsocial ul li {
   font-size: 2em;
@@ -179,7 +182,6 @@ main #howitworks #phone .container .col-lg-2 h3, main #howitworks #phone .contai
 
 /* Footer */
 footer {
-  /* height: 500px; */
   background-color: black;
   color: white;
   padding-top: 40px;
@@ -211,11 +213,19 @@ hr {
   main #products .container .center #bike {
     margin-top: 20px;
   }
-  #info .findus {
-    background-size: 100%;
+  main #howitworks #phone img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
   }
   #info .smart .infotext {
     left: 50%;
+  }
+  #info .getapp img {
+    min-width: 500px;
+    max-width: 660px;
   }
   .center-xs {
     text-align: center;
@@ -229,17 +239,27 @@ hr {
   main #products .container .center #bike {
     margin-top: 20px;
   }
-  #info .findus {
-    background-size: 100%;
+  main #howitworks #phone img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
   }
   #info .smart .infotext {
     left: 50%;
+  }
+  #info .getapp img {
+    max-width: 660px;
   }
   .center-md {
     text-align: center;
   }
 }
 
-@media screen and (min-width: 993px) {
-
+@media screen and (min-width: 992px) {
+  #info .findus {
+    background-position: right;
+    background-size: 98%;
+  }
 }
